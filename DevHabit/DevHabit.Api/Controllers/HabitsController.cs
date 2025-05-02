@@ -63,7 +63,7 @@ public sealed class HabitsController(ApplicationDbContext dbContext) : Controlle
 
         HabitDto habitDTO = habit.ToDto();
 
-        return CreatedAtAction(nameof(CreateHabit), new { id = habitDTO.Id }, habitDTO);
+        return CreatedAtAction(nameof(GetHabit), new { id = habitDTO.Id }, habitDTO);
     }
 
     
