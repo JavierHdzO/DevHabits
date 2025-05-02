@@ -1,6 +1,5 @@
 ﻿using DevHabit.Api.DTOs.Tags;
 using DevHabit.Api.Entities;
-using FluentValidation;
 
 namespace DevHabit.Api.DTOs.Habits;
 
@@ -14,4 +13,3 @@ public sealed record CreateHabitDto
     public DateOnly? DateEnd { get; init; }
     public MilestoneDto? Milestone { get; init; }
 }
-
